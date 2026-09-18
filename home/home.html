@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappyKidz | Learn, Play & Explore</title>
+    <meta name="description" content="HappyKidz is a fun edutainment platform with learning activities, games, videos, and gifts for kids.">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="../images/baby icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="all">
+    <!-- nav start -->
+    <div class="navBar" id="link-one">
+        <div class="left">
+            <div class="logo">
+            <h1 class="animated-text">
+                <span>H</span><span>a</span><span>p</span><span>p</span><span>y</span><span>K</span><span>i</span><span>d</span><span>z</span>
+            </h1>
+            </div>
+            <div class="logIn">
+                <a href="#container" class="logInBtn">LogIn</a>
+            </div>
+        </div>
+        <div class="center">
+            <h2>This is free space</h2>
+        </div>
+        <div class="right">
+            <div class="toggle">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="light()"><i class="fa-solid fa-sun"></i></button>
+                <button type="button" class="toggle-btn" onclick="dark()"><i class="fa-solid fa-moon"></i></button>
+            </div>
+            <div class="menuBtn">
+                <div id="icon">
+                <i class="fa-solid fa-bars" onclick="displayMenu()"></i>
+                </div>
+                <div id="menu">
+                    <!-- <div class="sub-menu-wrap" id="subMenu"> -->
+                        <div class="sub-menu">
+                            <button onclick="displayIcon()">&times;</button>
+                            <a href="#link-one" class="sub-menu-link" onclick="displayIcon1()">
+                                <i class="fa-solid fa-house"></i>
+                                <p>Home</p>
+                            </a>
+                            <a href="#container" class="sub-menu-link" onclick="displayIcon2()">
+                                <i class="fa-solid fa-id-card-clip"></i>
+                                <p>About Us</p>
+                                
+                            </a>
+                            <a href="#favorite" class="sub-menu-link" onclick="displayIcon3()">
+                                <i class="fa-solid fa-users-between-lines"></i>
+                                <p>Favorites</p>
+                                
+                            </a>
+                            <a href="#link4" class="sub-menu-link" onclick="displayIcon4()">
+                               
+                                <i class="fa-solid fa-photo-film"></i>
+                                <p>Gallery</p>
+                               
+                            </a>
+                        </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- nav end -->
+<div id="bodyColor">
+<!-- start tutorial section -->
+<div class="tutorialBtn" >
+    <div class="call1" onclick="showTutorialVideo()">?</div>
+    <div id="popup-video">
+        <span id="close">&times;</span>
+        <video src="../video/cartoon1.mp4" muted autoplay controls aria-label="HappyKidz tutorial video"></video>
+    </div>
+</div>
+<!-- end tutorial section-->
+<!-- start home -->
+<div class="homepage">
+<div class="slider">
+    <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        
+        <div class="slide first">
+            <img src="../images/poster2.jpg" alt="HappyKidz learning activity" height="500" width="800">
+        </div>
+        <div class="slide">
+            <img src="../images/poster1.jpg" alt="HappyKidz fun learning" height="500" width="800">
+        </div>
+        <div class="slide">
+            <img src="../images/poster3.jpg" alt="HappyKidz play time" height="500" width="800">
+        </div>
+        <div class="slide">
+            <img src="../images/poster4.jpg" alt="HappyKidz activities" height="500" width="800">
+        </div>
+ 
+<div class="navigation-auto">
+    <div class="auto-btn1"></div>
+    <div class="auto-btn2"></div>
+    <div class="auto-btn3"></div>
+    <div class="auto-btn4"></div>
+</div>
+</div>
+<div class="navigation-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+</div>
+
+</div>
+<div class="features">
+    <a href="../learnGallery/learn.html">
+    <div class="learn">
+        <img src="../images/learn.webp" alt="Learning activities" width="320" height="230">
+        <div class="caption1">
+			<h3>Learn</h3>
+		</div>
+    </div>
+    </a>
+    <a href="../gamesGallery/games.html">
+    <div class="learn">
+        <img src="../images/game.webp" alt="Mini games" width="320" height="230">
+        <div class="caption1">
+			<h3>Games</h3>
+		</div> 
+    </div>
+    </a>  
+    <a href="../VideoGallery/test.html">  
+    <div class="learn">
+        <img src="../images/video.jpg" alt="Kids videos" width="320" height="230">
+        <div class="caption1">
+			<h3>Videos</h3>
+		</div>
+    </div>
+    </a>
+    <a href="../Gift/gift.html">
+    <div class="learn">
+        <img src="../images/gift.webp" alt="Gift activities" width="320" height="230">
+        <div class="caption1">
+			<h3>Gift</h3>
+		</div>
+    </div>
+    </a>
+</div>
+</div>
+<!-- end home -->
+ <!-- start logIn -->
+ <div id="container">
+    <div class="about-us-section">
+        <h2>About Us — HappyKidz</h2>
+        <p>
+          Welcome to <strong>HappyKidz</strong>, a joyful digital world where learning meets fun!
+          In the <strong>Learn With Me</strong> section, kids explore tools like calculators and quizzes.
+          The <strong>Cartoon & Songs Videos</strong> zone brings favorite tunes and animations.
+          Enjoy fun challenges in our <strong>Mini Games</strong> section and win surprises in the
+          <strong>Lucky Draw Gift</strong> area! HappyKidz makes learning playful and full of smiles.
+        </p>
+      </div>
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn1"></div>
+            <button type="button" class="toggle-btn1" onclick="logIn()">Log In</button>
+            <button type="button" class="toggle-btn1" onclick="register()">Register</button>
+        </div>
+        <div class="social-icons">
+        <a href="" class="icon2"><i class="fab fa-facebook-f"></i></a>
+		<a href="" class="icon2"><i class="fab fa-twitter"></i></a>
+		<a href="" class="icon2"><i class="fab fa-google"></i></a>
+        </div>
+        <form action="" id="logIn1" class="input-group">
+        <div class="two-row">
+        <div class="input-box1">
+            <input type="text" class="input-field" placeholder="Enter Name" required>
+            <!-- <i class="fab fa-google"></i> -->
+        </div>
+        <div class="input-box">
+            <input type="password" class="input-field" id="password-box" placeholder="Enter Password" required>
+            <span class="eye" onclick="toggle()">
+                <i id="hide1" class="fa-solid fa-eye"></i>
+                <i id="hide2" class="fa-solid fa-eye-slash"></i>
+            </span>
+        </div>
+        </div>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="submit-btn">Log in</button>
+        </form>
+        <form action="" id="Register" class="input-group">
+            <div class="two-row">
+                <div class="input-box1">
+                    <input type="text" class="input-field" placeholder="Enter Name" required>
+                </div>
+                <div class="input-box1">
+                    <input type="email" class="input-field" placeholder="Enter Email" required>
+                </div>
+                <div class="input-box2">
+                    <input type="password" class="input-field" id="password-box1" placeholder="Enter Password" required>
+                    <span class="eye" onclick="toggle1()">
+                      <i id="hide3" class="fa-solid fa-eye"></i>
+                        <i id="hide4" class="fa-solid fa-eye-slash"></i>
+                    </span>
+                </div>
+            </div>
+            <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+
+    </div>
+</div>
+
+<!-- end logIn -->
+ <!-- start favorite-->
+<div class="popup-section2" id="favorite">
+        <h2>Add Your Favorite</h2>
+        <div class="video-container2">
+        <div class="video2">
+            <div class="container2">
+                <img src="../images/addBtn.png" id="add1" onclick="showTutorialVideo2()" alt="" width="200" height="200">
+            </div>
+        </div>
+        <!-- <div class="video2">
+            <div class="container2">
+                <img src="../images/addBtn.png" id="add2" onclick="showTutorialVideo3()" alt="" width="200" height="200">
+	        </div>
+        </div>
+        <div class="video2">
+            <div class="container2">
+                <img src="../images/addBtn.png" id="add3" onclick="showTutorialVideo4()" alt="" width="200" height="200">
+	        </div>
+        </div>
+         <div class="video2">
+            <div class="container2">
+                <img src="../images/addBtn.png" id="add4" onclick="showTutorialVideo5()" alt="" width="200" height="200">
+	        </div>
+        </div> -->
+
+    </div>
+</div>
+ <!-- end favorite-->
+  <!--start chooseFavorite-->
+<div class="tutorialBtn2" >
+    <div id="popup-video2">
+        <div class="learnHeader">
+            <span id="close2">&times;</span>
+            <h3>What's your favorite?</h3>
+        </div>
+        <div class="choose">
+            <div class="chooselearn">
+                <img src="../images/color.png" id="choose1" onclick="addToFav1()" alt="" width="100" height="80">
+            </div>
+            <div class="chooselearn">
+                <img src="../images/picture.png" id="choose2" onclick="addToFav2()" alt="" width="100" height="80">
+            </div>
+            <div class="chooselearn">
+                <img src="../images/age.png" id="choose3" onclick="addToFav3()" alt="" width="100" height="80">
+            </div>
+            <div class="chooselearn">
+                <img src="../images/multiplication.png" id="choose4" onclick="addToFav4()" alt="" width="100" height="80">
+            </div>
+            <div class="chooselearn">
+                <img src="../images/quiz.png" id="choose5" onclick="addToFav5()" alt="" width="100" height="80">
+            </div>
+            <div class="chooselearn">
+                <img src="../images/length.png" id="choose6" onclick="addToFav6()" alt="" width="100" height="80">
+            </div>
+            <div class="chooselearn">
+                <img src="../images/area.png" id="choose7" onclick="addToFav7()" alt="" width="100" height="80">
+            </div>
+            <div class="chooselearn">
+                <img src="../images/temperature.png" id="choose8" onclick="addToFav8()" alt="" width="100" height="80">
+            </div>
+            <div class="chooselearn">
+                <img src="../images/interest.png" id="choose9" onclick="addToFav9()" alt="" width="100" height="80">
+            </div>
+            <div class="chooselearn">
+                <img src="../images/game1.jpeg" id="choose10" onclick="addToFav10()" alt="" width="100" height="80">
+            </div>
+            <div class="chooselearn">
+                <img src="../images/game2.jfif" id="choose11" onclick="addToFav11()" alt="" width="100" height="80">
+            </div>
+            <div class="chooselearn">
+                <img src="../images/game4.jpg" id="choose12" onclick="addToFav12()" alt="" width="100" height="80">
+            </div>
+            <div class="chooselearn">
+                <img src="../images/game5.gif" id="choose13" onclick="addToFav13()" alt="" width="100" height="80">
+            </div>
+            <div class="chooselearn">
+                <img src="../images/game6.jfif" id="choose14" onclick="addToFav14()" alt="" width="100" height="80">
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!--end choose favorite-->
+<!-- start popup video -->
+<div class="popup-section" id="link4">
+        <h2>Gallery</h2>
+        <div class="video-container">
+        <div class="video">
+            <div class="container">
+                <img src="../images/game2.jfif" alt="" width="334" height="222">
+                <div class="caption">
+                    <h3>How Sweet!</h3>
+                    <p>This is css animation lesson for image card</p>
+                </div>
+	        </div>
+        </div>
+        <div class="video">
+            <div class="container">
+                <img src="../images/learn.webp" alt="" width="334" height="222">
+                <div class="caption">
+                    <h3>How Sweet!</h3>
+                    <p>This is css animation lesson for image card</p>
+                </div>
+	        </div>
+        </div>
+        <div class="video">
+            <div class="container">
+                <img src="../images/poster3.jpg" alt="" width="334" height="222">
+                <div class="caption">
+                    <h3>How Sweet!</h3>
+                    <p>This is css animation lesson for image card</p>
+                </div>
+	        </div>
+        </div>
+        <div class="video">
+            <div class="container">
+                <img src="../images/poster4.jpg" alt="" width="334" height="222">
+                <div class="caption">
+                    <h3>How Sweet!</h3>
+                    <p>This is css animation lesson for image card</p>
+                </div>
+	        </div>
+        </div>
+        <div class="video">
+            <div class="container">
+                <img src="../images/game4.jpg" alt=""width="334" height="222">
+                <div class="caption">
+                    <h3>How Sweet!</h3>
+                    <p>This is css animation lesson for image card</p>
+                </div>
+	        </div>
+        </div>
+        <div class="video">
+            <div class="container">
+                <img src="../images/video.jpg" alt=""width="334" height="222">
+                <div class="caption">
+                    <h3>How Sweet!</h3>
+                    <p>This is css animation lesson for image card</p>
+                </div>
+	        </div>
+        </div>
+        <div class="video">
+            <div class="container">
+                <img src="../images/gift.webp" alt=""width="334" height="222">
+                <div class="caption">
+                    <h3>How Sweet!</h3>
+                    <p>This is css animation lesson for image card</p>
+                </div>
+	        </div>
+        </div>
+        <div class="video">
+            <div class="container">
+                <img src="../images/game7.png" alt=""width="334" height="222">
+                <div class="caption">
+                    <h3>How Sweet!</h3>
+                    <p>This is css animation lesson for image card</p>
+                </div>
+	        </div>
+        </div>
+        <div class="video">
+            <div class="container">
+                <img src="../images/poster2.jpg" alt=""width="334" height="222">
+                <div class="caption">
+                    <h3>How Sweet!</h3>
+                    <p>This is css animation lesson for image card</p>
+                </div>
+	        </div>
+        </div>
+    </div>
+</div>
+<!-- end popup video -->
+  <!-- start footer -->
+<div class="footer">
+    <div class="footer-left">
+    <div class="about-us">
+        <h3>Edutainment Platform for Kids</h3><hr>
+        <p>Lorem ipsum dolor sit consectetur 
+            adipiscing elit, sed do eiusmod tempor.. </p>
+         <a href="mailto:kyawhsan042219@gmail.com">kyawhsan042219@gmail.com</a>
+    </div>
+    <div class="links">
+       
+        <a href="#link-one">Home</a><br>
+        <a href="../learnGallery/learn.html">Learn</a><br>
+        <a href="../gamesGallery/games.html">Games</a><br>
+        <a href="../VideoGallery/test.html">Video</a>
+    
+    </div>
+</div>
+<div class="footer-right">
+    <div class="footer-icons">
+        <a href="" class="icon"><i class="fab fa-facebook-f"></i></a>
+		<a href="" class="icon"><i class="fab fa-twitter"></i></a>
+		<a href="" class="icon"><i class="fab fa-google"></i></a>
+		<a href="" class="icon"><i class="fab fa-youtube"></i></a>
+		<a href="" class="icon"><i class="fab fa-instagram"></i></a>
+    </div>
+</div>
+</div>
+ <!-- end footer -->
+</div>
+</div>
+<div id="rotate">
+    <img src="../images/rotate.png" alt="" width="300" height="300">
+    <p>Please rotate your phone for the best experience 😊</p>
+</div>
+    <script src="home.js"></script>
+</body>
+</html>

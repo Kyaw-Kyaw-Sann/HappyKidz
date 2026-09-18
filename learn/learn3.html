@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="learn3.css">
+</head>
+<body>
+    <form>
+        <h1>Shape Area Calculator:</h1>
+    
+        <select id="shapeSelect">
+            <option value="">-- Select Shape --</option>
+            <option value="square">Square</option>
+            <option value="rectangle">Rectangle</option>
+            <option value="triangle">Triangle</option>
+            <option value="circle">Circle</option>
+        </select><br><br>
+    
+        <input type="number" id="input1" placeholder="Value 1"><br>
+        <input type="number" id="input2" placeholder="Value 2 (if needed)"><br>
+    
+        <button type="button" onclick="calculateArea()">Submit</button>
+        <p id="areaResult"></p>
+    </form>
+    <script src="learn3.js"></script>
+</body>
+</html>

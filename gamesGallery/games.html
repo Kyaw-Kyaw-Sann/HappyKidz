@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Gallery</title>
+    <link rel="stylesheet" href="games.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!-- nav start -->
+    <div id="all">
+   <div class="navBar" id="link-one">
+    <div class="left">
+        <div class="logo">
+        <h1 class="animated-text">
+            <span>H</span><span>a</span><span>p</span><span>p</span><span>y</span><span>K</span><span>i</span><span>d</span><span>z</span>
+        </h1>
+        </div>
+        <div class="logIn">
+            <a href="../home/home.html#container" class="logInBtn" onclick="seeLogInForm()">LogIn</a>
+        </div>
+    </div>
+    <div class="center">
+        <h2>This is free space</h2>
+    </div>
+    <div class="right">
+        <div class="toggle">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="light()"><i class="fa-solid fa-sun"></i></button>
+            <button type="button" class="toggle-btn" onclick="dark()"><i class="fa-solid fa-moon"></i></button>
+        </div>
+        <div class="menuBtn">
+            <div id="icon">
+            <i class="fa-solid fa-bars" onclick="displayMenu()"></i>
+            </div>
+            <div id="menu">
+                <!-- <div class="sub-menu-wrap" id="subMenu"> -->
+                    <div class="sub-menu">
+                        <button onclick="displayIcon()">&times;</button>
+                        <a href="../home/home.html#" class="sub-menu-link"onclick="displayIcon1()">
+                            <i class="fa-solid fa-house"></i>
+                            <p>Home</p>
+                        </a>
+                        <a href="../home/home.html#container" class="sub-menu-link" onclick="displayIcon2()">
+                            <i class="fa-solid fa-id-card-clip"></i>
+                            <p>About Us</p>
+                            
+                        </a>
+                        <a href="../home/home.html#" class="sub-menu-link" onclick="displayIcon3()">
+                            <i class="fa-solid fa-users-between-lines"></i>
+                            <p>Favorites</p>
+                            
+                        </a>
+                        <a href="../home/home.html#link4" class="sub-menu-link" onclick="displayIcon4()">
+                           
+                            <i class="fa-solid fa-photo-film"></i>
+                            <p>Gallery</p>
+                           
+                        </a>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- nav end -->
+  <!-- home start -->
+  <div id="home">
+    <!-- <h3 class="heading">Video gallery</h3> -->
+    <div class="container">
+        <div class="video-list">
+            <div class="vid rock" onclick="Rock()">
+                <img src="../images/game2.jfif" width="100" height="50">
+                <h3 class="tttle">01. Rock, Paper, Scissors </h3>
+            </div>
+            <div class="vid dice" onclick="Dice()">
+                <img src="../images/game1.jpeg" width="100" height="50">
+                <h3 class="tttle">02. Dice Rolling</h3>
+            </div>
+            <div class="vid tic" onclick="Tic()">
+                <img src="../images/game4.jpg" width="100" height="50">
+                <h3 class="tttle">03. Tic Tac Toe</h3>
+            </div>
+            <div class="vid pong" onclick="Pong()">
+                <img src="../images/game5.gif" width="100" height="50">
+                <h3 class="tttle">04. Pong</h3>
+            </div>
+            <div class="vid snake" onclick="Snake()">
+                <img src="../images/game6.jfif" width="100" height="50">
+                <h3 class="tttle">05. Snake</h3>
+            </div>
+        </div>
+        <div class="main-video">
+            <!-- start rock paper scissors-->
+            <div id="rockGame">
+                <h1>Rock - Paper - Scissor</h1>
+                <div class="choices">
+                    <button onclick="playGame('rock')">👊</button>
+                    <button onclick="playGame('paper')">✋</button>
+                    <button onclick="playGame('scissors')">✌️</button>
+                </div>
+            
+                <!-- <div id="playerDisplay">PLAYER: </div> -->
+                <div id="computerDisplay">Computer: </div>
+                <div id="resultDisplay">Win or Lose?</div>
+            
+                <div class="scoreDisplay">
+                    Player Score: <span id="playerScoreDisplay">0</span>
+                </div>
+                <div class="scoreDisplay">
+                    Computer Score: <span id="computerScoreDisplay">0</span>
+                </div>
+            </div>
+            
+             <!-- end rock paper scissors-->
+            <!-- start dice roller-->
+            <div id="diceRoller">
+                <h1>Dice Roller</h1>
+                <div class="dice-section">
+                    <div class="player1">
+                        <h1>Player 1</h1>
+                        <button onclick="rollDice('player1')">Roll Dice</button>
+                        <div id="diceIcons">
+        
+                        </div>
+                    </div>
+                    <div class="player1">
+                        <h1>Player 2</h1>
+                        <button onclick="rollDice('player2')">Roll Dice</button>
+                        <div id="diceIcons2">
+        
+                        </div>
+                    </div>
+                </div>
+                <div id="result">Result</div>
+            </div>
+            
+            <!-- end dice roller-->
+             <!-- start tic tae toe-->
+             <div id="tictactoe">
+                <h1>Tic Tac Toe</h1>
+                <div id="cellContainer">
+                    <div cellIndex="0" class="cell"></div>
+                    <div cellIndex="1" class="cell"></div>
+                    <div cellIndex="2" class="cell"></div>
+                    <div cellIndex="3" class="cell"></div>
+                    <div cellIndex="4" class="cell"></div>
+                    <div cellIndex="5" class="cell"></div>
+                    <div cellIndex="6" class="cell"></div>
+                    <div cellIndex="7" class="cell"></div>
+                    <div cellIndex="8" class="cell"></div>
+                </div>
+                <h2 id="statusText"></h2>
+                <button id="restartBtn">Restart</button>
+            </div>
+             <!-- end tic tae toe-->
+            <!-- start pong-->
+            <div id="pong">
+                <canvas id="gameBoard" width="500" height="500"></canvas>
+                <div class="combine">
+                    <div id="scoreText">0 : 0</div>
+                    <button id="start" onclick="gameStart()">Start</button>
+                    <button id="resetBtn">Reset</button>
+                    <button id="stop" onclick="gameStop()">Stop</button>
+                </div>
+            </div>
+            <!-- end pong -->
+             <!-- start snake-->
+             <div id="snakeGameWrapper">
+                <canvas id="snakeCanvas" width="500" height="500"></canvas>
+                <div class="combine">
+                <div id="scoreDisplay">0</div>
+                <button id="restartButton">Restart</button>
+            </div>
+            </div>
+             <!-- end snake-->
+        </div>
+    </div>
+</div>
+<!-- home end -->
+ <!-- start footer -->
+<div class="footer">
+    <div class="footer-left">
+    <div class="about-us">
+        <h3>Edutainment Platform for Kids</h3><hr>
+        <p>Lorem ipsum dolor sit consectetur 
+            adipiscing elit, sed do eiusmod tempor.. </p>
+        <a href="mailto:kyawhsan042219@gmail.com">kyawhsan042219@gmail.com</a>
+    </div>
+    <div class="links">
+       
+        <a href="#link-one">Home</a><br>
+        <a href="../learnGallery/learn.html">Learn</a><br>
+        <a href="games.html">Games</a><br>
+        <a href="../VideoGallery/test.html">Video</a>
+    
+    </div>
+</div>
+<div class="footer-right">
+    <div class="footer-icons">
+        <a href="" class="icon"><i class="fab fa-facebook-f"></i></a>
+		<a href="" class="icon"><i class="fab fa-twitter"></i></a>
+		<a href="" class="icon"><i class="fab fa-google"></i></a>
+		<a href="" class="icon"><i class="fab fa-youtube"></i></a>
+		<a href="" class="icon"><i class="fab fa-instagram"></i></a>
+    </div>
+
+</div>
+</div></div>
+ <!-- end footer -->
+ <div id="rotate">
+ <img src="../images/rotate.png" alt="" width="300" height="300">
+ <p>Please rotate your phone for the best experience 😊</p>
+</div>
+    <script src="games.js"></script>
+</body>
+</html>

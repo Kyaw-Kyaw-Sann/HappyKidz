@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="loading">
+        <div class="percent"></div>
+            <div class="progress-bar">
+                <div class="progress">
+
+                </div>
+            </div>
+    </div>
+    <div class="videoGallery">
+        <!-- nav start -->
+    <div class="navBar" id="link-one">
+        <div class="left">
+            <div class="logo">
+            <h1 class="animated-text">
+                <span>H</span><span>a</span><span>p</span><span>p</span><span>y</span><span>K</span><span>i</span><span>d</span><span>z</span>
+            </h1>
+            </div>
+            <div class="logIn">
+                <a href="../home/home.html#container" class="logInBtn" onclick="seeLogInForm()">LogIn</a>
+            </div>
+        </div>
+        <div class="center">
+            <h2>This is free space</h2>
+        </div>
+        <div class="right">
+            <div class="toggle">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="light()"><i class="fa-solid fa-sun"></i></button>
+                <button type="button" class="toggle-btn" onclick="dark()"><i class="fa-solid fa-moon"></i></button>
+            </div>
+            <div class="menuBtn">
+                <div id="icon">
+                <i class="fa-solid fa-bars" onclick="displayMenu()"></i>
+                </div>
+                <div id="menu">
+                    <!-- <div class="sub-menu-wrap" id="subMenu"> -->
+                        <div class="sub-menu">
+                            <button onclick="displayIcon()">&times;</button>
+                            <a href="../home/home.html#" class="sub-menu-link"onclick="displayIcon1()">
+                                <i class="fa-solid fa-house"></i>
+                                <p>Home</p>
+                            </a>
+                            <a href="../home/home.html#container" class="sub-menu-link" onclick="displayIcon2()">
+                                <i class="fa-solid fa-id-card-clip"></i>
+                                <p>About Us</p>
+                                
+                            </a>
+                            <a href="../home/home.html#" class="sub-menu-link" onclick="displayIcon3()">
+                                <i class="fa-solid fa-users-between-lines"></i>
+                                <p>Favorites</p>
+                                
+                            </a>
+                            <a href="../home/home.html#link4" class="sub-menu-link" onclick="displayIcon4()">
+                               
+                                <i class="fa-solid fa-photo-film"></i>
+                                <p>Gallery</p>
+                               
+                            </a>
+                        </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- nav end -->
+    <div id="bodyColor">
+    <div class="container">
+        <div class="main-video">
+            <div class="video">
+                <video src="../video/cartoon2.mp4" controls muted autoplay></video>
+                <h3 class="tttle">Video title is here</h3>
+            </div>
+        </div>
+        <div id="secondRow">
+        <div class="videoBtn">
+            <button onclick="All()">All</button>
+            <button onclick="Cartoons()">Cartoons</button>
+            <button onclick="Songs()">Songs</button>
+        </div>
+        <div class="video-list">
+            <div id="all">
+                <div class="vid active">
+                    <video src="../video/cartoon2.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua1.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua2.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua3.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua7.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/cartoon1.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/cartoon2.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua2.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua7.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/cartoon2.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua1.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua2.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua3.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua7.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/cartoon1.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/cartoon2.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua2.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua7.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+            </div>
+            <div id="cartoon">
+                <div class="vid active">
+                    <video src="../video/cartoon2.mp4" muted></video>
+                    <h3 class="tttle">Cartoon title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua1.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua2.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua3.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua7.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/cartoon1.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/cartoon2.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua2.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua2.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+            </div>
+            <div id="songs">
+                <div class="vid active">
+                    <video src="../video/cartoon2.mp4" muted></video>
+                    <h3 class="tttle">Songs title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua1.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua2.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua3.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua7.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/cartoon1.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/cartoon2.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua2.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+                <div class="vid">
+                    <video src="../video/donghua2.mp4" muted></video>
+                    <h3 class="tttle">Video title is here</h3>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+     <!-- start footer -->
+<div class="footer">
+    <div class="footer-left">
+    <div class="about-us">
+        <h3>Edutainment Platform for Kids</h3><hr>
+        <p>Lorem ipsum dolor sit consectetur 
+            adipiscing elit, sed do eiusmod tempor.. </p>
+        <a href="mailto:kyawhsan042219@gmail.com">kyawhsan042219@gmail.com</a>
+    </div>
+    <div class="links">
+       
+        <a href="#link-one">Home</a><br>
+        <a href="../learnGallery/learn.html">Learn</a><br>
+        <a href="../gamesGallery/games.html">Games</a><br>
+        <a href="test.html">Video</a>
+    
+    </div>
+</div>
+<div class="footer-right">
+    <div class="footer-icons">
+        <a href="" class="icon"><i class="fab fa-facebook-f"></i></a>
+		<a href="" class="icon"><i class="fab fa-twitter"></i></a>
+		<a href="" class="icon"><i class="fab fa-google"></i></a>
+		<a href="" class="icon"><i class="fab fa-youtube"></i></a>
+		<a href="" class="icon"><i class="fab fa-instagram"></i></a>
+    </div>
+</div>
+</div>
+ <!-- end footer -->
+</div>
+    <script src="test.js"></script>
+</body>
+</html>

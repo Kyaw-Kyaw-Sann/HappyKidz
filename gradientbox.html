@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background: #142d4a;
+            height: 230px;
+            width: 320px;
+            /*aspect-ratio: 1/1;*/
+            border-radius: 10px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box::before,
+        .box::after{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: conic-gradient(
+                from 0deg at center,
+                #00c3ff,#4d0199,#6300c6,#009dcd);
+            border-radius: inherit;
+            z-index: -2;
+            padding: 2px;
+            animation: autoRotate 2s linear infinite;
+        }
+        .box::after{
+            filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+   <a href=""> <div class="box">
+
+    </div></a>
+</body>
+</html>
